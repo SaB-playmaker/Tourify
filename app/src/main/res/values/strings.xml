@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Tourify</string>
     <string name="charity">Charity</string>
     <string name="main_menu">MAIN MENU</string>
     <string name="events">Events</string>
