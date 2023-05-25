@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">sign up</string>
+    <string name="app_name">Tourify</string>
     <string name="password">Password</string>
     <string name="full_name">Full name</string>
 </resources>
