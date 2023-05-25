@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">LoginAndSignUp</string>
+    <string name="app_name">My Application</string>
+    <string name="charity">Charity</string>
+    <string name="main_menu">MAIN MENU</string>
+    <string name="events">Events</string>
+    <string name="tours">Tours</string>
+    <string name="join">Join</string>
+    <string name="loyalty">Loyalty</string>
+    <string name="cartoon_image">cartoon image</string>
 </resources>
