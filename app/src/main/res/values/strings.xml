@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">LoginAndSignUp</string>
+    <string name="app_name">tour_page</string>
+    <string name="Image_description">Image description</string>
+    <string name="Button_description">Button description</string>
+    <string name="Name">   Name</string>
+    <string name="Place">    Place</string>
+    <string name="Description_of_tour">Description of tour</string>
+    <string name="Price">Price</string>
+    <string name="Assessment">Assessment</string>
+    <string name="Date">Date</string>
+
+
+
 </resources>
