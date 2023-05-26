@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tourify</string>
+    <string name="event1">Name</string>
+
+
+    <string name="type1">Type</string>
+
+
+    <string name="location1">Location</string>
+
+
+    <string name="price1">Price</string>
+
+
+    <string name="date1">Date</string>
+
+<string name="popular">Popular event</string>
+    <string name="duration1">Duration</string>
+    <string name="transport1">Transport</string>
+
+    <string name="tours">
+        TOURS
+    </string>
+
+    <string name="events">
+        EVENTS
+    </string>
+</resources>
