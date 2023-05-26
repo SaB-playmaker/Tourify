@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="65dp"
+        android:fontFamily="sans-serif-black"
+        android:text="  Ooops,    what's a   pity!"
+        android:textColor="#388084"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="546dp"
+        android:layout_marginEnd="55dp"
+        android:text="Try updating your search term"
+        android:textColor="#388084"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="114dp"
+        android:text="         Unfortunately,       we did not find anything              similar to your demand"
+        android:textSize="20dp" />
+
+    <ImageView
+
+        android:layout_width="106dp"
+        android:layout_height="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="262dp"
+        android:layout_marginEnd="138dp"
+        android:src="@drawable/sad" />
+
+</RelativeLayout>
+
