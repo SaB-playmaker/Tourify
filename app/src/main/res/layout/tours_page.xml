@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="25dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/picture"
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#B2B1B2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture"
+            app:shapeAppearance="@style/roundedImageViewRounded"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:id="@+id/listName"
+            android:layout_width="202dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/picture"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/event1"
+
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/location"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/picture"
+            android:scaleType="centerCrop"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/listLocation"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@+id/picture"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/location1"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/price"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="67dp"
+            android:layout_toEndOf="@+id/location"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dollar_sign" />
+
+        <TextView
+            android:id="@+id/listPrice"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="123dp"
+            android:layout_marginTop="66dp"
+            android:layout_toEndOf="@+id/picture"
+            android:text="@string/price1"
+            android:textColor="#000000"
+            android:fontFamily="@font/montserrat"
+            android:textSize="17sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/date"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/picture"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/date" />
+
+        <TextView
+            android:id="@+id/listDate"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="43dp"
+            android:layout_toEndOf="@+id/picture"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/date1"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/duration"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/picture"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/duration"/>
+
+
+        <TextView
+            android:id="@+id/listDuration"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="63dp"
+            android:layout_toEndOf="@+id/picture"
+            android:text="@string/duration1"
+            android:textColor="#000000"
+            android:fontFamily="@font/montserrat"
+            android:textSize="17sp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/transport"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/picture"
+            android:layout_marginTop="87dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/transport"/>
+        <TextView
+            android:id="@+id/listTransport"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="83dp"
+            android:layout_toEndOf="@+id/picture"
+            android:text="@string/transport1"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:fontFamily="@font/montserrat"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@+id/picture"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_back" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
