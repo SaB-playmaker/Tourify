@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="285dp"
+        android:layout_height="198dp"
+        android:layout_marginBottom="430dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/emailTextInputLayout"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="90dp"
+            app:srcCompat="@drawable/ic_logo1_foreground" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="180dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Tourify"
+            android:textColor="#388084"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="141dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="190dp"
+            android:fontFamily="@font/montserrat"
+            android:text="by Triptech"
+            android:textColor="#388084"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailTextInputLayout"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="320dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#4D4D4D"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="317dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailTextInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#4D4D4D"
+            android:textSize="20sp"
+            app:passwordToggleEnabled="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonLogIn"
+        android:layout_width="317dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#388084"
+        android:fontFamily="@font/montserrat"
+        android:text="Log in"
+        android:textSize="24sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordTextInputLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordTextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout" />
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="118dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="55dp"
+        android:backgroundTint="#388084"
+        android:text="Sign Up"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
