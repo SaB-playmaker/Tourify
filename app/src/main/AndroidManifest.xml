@@ -22,8 +22,11 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+
             android:exported="true">
         </activity>
+        <activity android:name=".ToursDataMock" />
+
     </application>
 
 </manifest>
