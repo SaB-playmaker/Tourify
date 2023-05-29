@@ -55,8 +55,10 @@
           android:layout_height="wrap_content"
           android:layout_gravity="center_vertical|center_horizontal"
           android:gravity="center"
-          android:orientation="vertical">
-
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="eventsOnClickMethod">
         <ImageView
             android:layout_width="132dp"
             android:layout_height="78dp"
@@ -96,7 +98,7 @@
           android:orientation="vertical"
           android:clickable="true"
           android:focusable="true"
-          android:onClick="myOnClickMethod">
+          android:onClick="toursOnClickMethod">
 
         <ImageView
             android:layout_width="132dp"
@@ -211,8 +213,10 @@
           android:layout_height="wrap_content"
           android:layout_gravity="center_vertical|center_horizontal"
           android:gravity="center"
-          android:orientation="vertical">
-
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="underDevAlertOnClickMethod">
         <ImageView
             android:layout_width="132dp"
             android:layout_height="78dp"
@@ -249,7 +253,10 @@
           android:layout_height="wrap_content"
           android:layout_gravity="center_vertical|center_horizontal"
           android:gravity="center"
-          android:orientation="vertical">
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="underDevAlertOnClickMethod">
 
         <ImageView
             android:layout_width="132dp"
