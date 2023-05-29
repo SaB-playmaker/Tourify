@@ -26,7 +26,7 @@
         android:divider="@android:color/transparent"
         android:dividerHeight="10sp"
         android:scrollbars="vertical"
-        tools:listitem="@layout/events_list">
+        tools:listitem="@layout/activity_events_list_item">
 
     </ListView>
 
