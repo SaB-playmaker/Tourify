@@ -2,15 +2,15 @@ package com.codingstuff.loginandsignup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.codingstuff.loginandsignup.databinding.ActivityMainBinding
+import com.codingstuff.loginandsignup.databinding.ActivityCharityListBinding
 
-class MainActivity1 : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class CharityActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCharityListBinding
     private lateinit var eventsAdapter: VolunteeringAdapter
     var dataArrayList = ArrayList<VolunteeringData>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityCharityListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         dataArrayList.add(VolunteeringData("ДоБроБат", "Fast Recovery","    Ukraine"))
         dataArrayList.add(VolunteeringData("Repair Together", "Help Victims","Ukraine"))
