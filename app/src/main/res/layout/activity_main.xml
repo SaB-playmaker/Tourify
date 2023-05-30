@@ -1,6 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="#4D4D4D"
+    android:foregroundTint="#4D4D4D"
+    tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/title_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="16dp"
+      android:fontFamily="@font/montserrat_bold"
+      android:text="@string/main_menu"
+      android:textColor="#388084"
+      android:textSize="45sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.509"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <GridLayout
+      android:id="@+id/gridLayout"
+      android:layout_width="323dp"
+      android:layout_height="394dp"
+      android:layout_below="@id/title_view"
+      android:layout_margin="20dp"
+      android:columnCount="2"
+      android:rowCount="3"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.804">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="128dp"
+        android:layout_height="116dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E1E1E1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center_horizontal"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="eventsOnClickMethod">
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/cartoon_image"
+            app:srcCompat="@drawable/ic_events"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/events"
+            android:textColor="#4D4D4D"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="89dp"
+        android:layout_height="27dp"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E1E1E1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center_horizontal"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="toursOnClickMethod">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/cartoon_image"
+            app:srcCompat="@drawable/ic_tours_foreground"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/tours"
+            android:textColor="#4D4D4D"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="121dp"
+        android:layout_height="13dp"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E1E1E1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center_horizontal"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="charityOnClickMethod">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/cartoon_image"
+            app:srcCompat="@drawable/ic_charity_foreground"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/charity"
+            android:textColor="#4D4D4D"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E1E1E1"
+        android:foregroundTint="#E1E1E1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center_horizontal"
+          android:gravity="center"
+          android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/cartoon_image"
+            app:srcCompat="@drawable/ic_join_foreground"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/join"
+            android:textColor="#4D4D4D"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E1E1E1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center_horizontal"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="loyaltyPageOnClickMethod">
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/cartoon_image"
+            app:srcCompat="@drawable/ic_loylty"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/loyalty"
+            android:textColor="#4D4D4D"
+            android:textSize="24sp" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="8dp"
+        android:backgroundTint="#E1E1E1"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="8dp">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical|center_horizontal"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:clickable="true"
+          android:focusable="true"
+          android:onClick="underDevAlertOnClickMethod">
+
+        <ImageView
+            android:layout_width="132dp"
+            android:layout_height="78dp"
+            android:contentDescription="@string/cartoon_image"
+            app:srcCompat="@drawable/ic_foryou"
+            app:tint="#4D4D4D" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="For you"
+            android:textColor="#4D4D4D"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+      </LinearLayout>
+    </androidx.cardview.widget.CardView>
+  </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
