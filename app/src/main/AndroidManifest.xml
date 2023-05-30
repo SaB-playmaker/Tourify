@@ -22,12 +22,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-
             android:exported="true">
         </activity>
         <activity android:name=".ToursDataMock" />
         <activity android:name=".EventsDataMock" />
-        <activity android:name=".LoyaltyPageActivity" />
+        <activity android:name=".LoyaltyPageActivity"/>
+        <activity android:name=".CharityActivity" />
     </application>
 
 </manifest>
