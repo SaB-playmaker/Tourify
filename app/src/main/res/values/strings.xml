@@ -7,18 +7,14 @@
     <string name="join">Join</string>
     <string name="loyalty">Loyalty</string>
     <string name="cartoon_image">cartoon image</string>
-    <string name="type1">Type</string>
-
-
-    <string name="location1">Location</string>
-
-
-    <string name="price1">Price</string>
-
-    <string name="event1">Name</string>
-    <string name="date1">Date</string>
-
+    <string name="type">Type</string>
+    <string name="location">Location</string>
+    <string name="price">Price</string>
+    <string name="event">Name</string>
+    <string name="date">Date</string>
+    <string name="assessment">Assessment</string>
     <string name="popular">Popular event</string>
-    <string name="duration1">Duration</string>
-    <string name="transport1">Transport</string>
+    <string name="duration">Duration</string>
+    <string name="transport">Transport</string>
+    <string name="description_of_event">Description_of_event</string>
 </resources>
