@@ -27,6 +27,7 @@
         </activity>
         <activity android:name=".ToursDataMock" />
         <activity android:name=".EventsDataMock" />
+        <activity android:name=".LoyaltyPageActivity" />
     </application>
 
 </manifest>

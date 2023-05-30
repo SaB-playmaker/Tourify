@@ -28,4 +28,8 @@ class MainActivity : AppCompatActivity() {
             .setPositiveButton("OK", null)
             .show()
     }
+    fun loyaltyPageOnClickMethod(view: View) {
+        val intent = Intent(this, LoyaltyPageActivity::class.java)
+        startActivity(intent)
+    }
 }

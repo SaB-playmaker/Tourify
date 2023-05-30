@@ -216,7 +216,7 @@
           android:orientation="vertical"
           android:clickable="true"
           android:focusable="true"
-          android:onClick="underDevAlertOnClickMethod">
+          android:onClick="loyaltyPageOnClickMethod">
         <ImageView
             android:layout_width="132dp"
             android:layout_height="78dp"
