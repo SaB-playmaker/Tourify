@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import com.codingstuff.loginandsignup.databinding.EventsListBinding
 
 class VolunteeringAdapter(context: Context, dataArrayList: ArrayList<VolunteeringData>):
-    ArrayAdapter<VolunteeringData>(context, R.layout.events_list, dataArrayList){
+    ArrayAdapter<VolunteeringData>(context, R.layout.activity_caharity_list_item, dataArrayList){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var view = convertView
