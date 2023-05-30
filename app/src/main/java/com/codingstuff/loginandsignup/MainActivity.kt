@@ -32,4 +32,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LoyaltyPageActivity::class.java)
         startActivity(intent)
     }
+
+    fun charityOnClickMethod(view: View) {
+        val intent = Intent(this, CharityActivity::class.java)
+        startActivity(intent)
+    }
 }
