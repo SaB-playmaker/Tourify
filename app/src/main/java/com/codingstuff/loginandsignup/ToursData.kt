@@ -10,4 +10,4 @@ class ToursData (
     var date: String,
     var transport: String,
     var image: Bitmap?=null
-        )
+    )
