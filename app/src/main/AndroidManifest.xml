@@ -29,6 +29,7 @@
         <activity android:name=".LoyaltyPageActivity"/>
         <activity android:name=".LoyaltyBankActivity" />
         <activity android:name=".CharityActivity" />
+        <activity android:name=".EventActivity" />
     </application>
 
 </manifest>
