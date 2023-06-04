@@ -58,7 +58,7 @@
             android:src="@drawable/tickets"/>
 
         <TextView
-            android:id="@+id/listType"
+            android:id="@+id/listCategory"
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -153,7 +153,7 @@
             android:src="@drawable/fire_gr"/>
 
         <TextView
-            android:id="@+id/listMark"
+            android:id="@+id/listType"
             android:layout_width="119dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
