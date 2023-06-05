@@ -27,8 +27,7 @@
             android:background="#B2B1B2"
             android:scaleType="centerCrop"
             android:src="@drawable/picture"
-            app:shapeAppearance="@style/roundedImageViewRounded"
-            app:tint="#4D4D4D" />
+            app:shapeAppearance="@style/roundedImageViewRounded" />
 
         <TextView
             android:id="@+id/listName"
@@ -85,12 +84,12 @@
             android:id="@+id/listPrice"
             android:layout_width="119dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="123dp"
+            android:layout_marginStart="158dp"
             android:layout_marginTop="66dp"
             android:layout_toEndOf="@+id/picture"
+            android:fontFamily="@font/montserrat"
             android:text="@string/price"
             android:textColor="#000000"
-            android:fontFamily="@font/montserrat"
             android:textSize="17sp" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -168,7 +167,7 @@
             android:id="@+id/arrow_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginStart="175dp"
+            android:layout_marginStart="216dp"
             android:layout_marginTop="80dp"
             android:layout_toEndOf="@+id/picture"
             android:rotation="180"

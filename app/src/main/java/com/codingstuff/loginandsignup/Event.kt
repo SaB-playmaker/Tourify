@@ -11,4 +11,5 @@ class Event {
     var location: String? = null
     var price: String? = null
     var date: String? = null
+    var imageURL: String? = null
 }

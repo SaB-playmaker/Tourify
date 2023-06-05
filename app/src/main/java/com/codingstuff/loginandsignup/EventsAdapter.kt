@@ -6,9 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.codingstuff.loginandsignup.databinding.ActivityEventsListItemBinding
+import com.squareup.picasso.Picasso
 
 class EventsAdapter(context: Context, dataArrayList: ArrayList<Event>):
-ArrayAdapter<Event>(context, R.layout.activity_events_list_item, dataArrayList){
+    ArrayAdapter<Event>(context, R.layout.activity_events_list_item, dataArrayList){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var view = convertView
@@ -28,6 +29,10 @@ ArrayAdapter<Event>(context, R.layout.activity_events_list_item, dataArrayList){
             listPrice.text = listData.price
             listDate.text = listData.date
             listMark.text = listData.description
+
+            Picasso.get()
+                .load(listData.imageURL)
+                .into(picture)
         }
         return view
     }

@@ -1,10 +1,12 @@
 package com.codingstuff.loginandsignup
 
-import android.graphics.Bitmap
+class VolunteeringData {
+    companion object Factory {
+        fun create(): VolunteeringData = VolunteeringData()
+    }
 
-class VolunteeringData (
-    var name: String,
-    var goal: String,
-    var location: String,
-    var image: Bitmap? = null
-    )
+    var name:  String? = null
+    var description: String? = null
+    var location: String? = null
+    var imageURL: String? = null
+}

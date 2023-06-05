@@ -14,19 +14,17 @@
         android:layout_height="wrap_content">
 
 
-        <com.google.android.material.imageview.ShapeableImageView
+        <ImageView
             android:id="@+id/picture"
-            android:layout_width="110dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="150dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:background="#B2B1B2"
-            android:scaleType="centerCrop"
             android:src="@drawable/picture"
-            app:shapeAppearance="@style/roundedImageViewRounded"
-            app:tint="#4D4D4D" />
+             />
 
         <TextView
             android:id="@+id/listName"
@@ -59,18 +57,18 @@
             android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
+            android:letterSpacing="0.2"
             android:layout_marginTop="23dp"
             android:layout_toEndOf="@+id/picture"
             android:fontFamily="@font/montserrat"
             android:text="@string/type"
             android:textColor="#000000"
-
-
             android:textSize="17sp" />
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/location"
             android:layout_width="24dp"
+            android:letterSpacing="0.2"
             android:layout_height="24dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="45dp"
@@ -84,6 +82,7 @@
             android:id="@+id/listLocation"
             android:layout_width="117dp"
             android:layout_height="wrap_content"
+            android:letterSpacing="0.2"
             android:layout_marginStart="30dp"
             android:layout_marginTop="43dp"
             android:layout_toEndOf="@+id/picture"
@@ -99,6 +98,7 @@
             android:layout_marginStart="5dp"
             android:layout_marginTop="65dp"
             android:layout_marginEnd="10dp"
+            android:letterSpacing="0.2"
             android:layout_marginBottom="5dp"
             android:layout_toEndOf="@+id/picture"
             android:scaleType="centerCrop"
@@ -107,6 +107,7 @@
         <TextView
             android:id="@+id/listPrice"
             android:layout_width="139dp"
+            android:letterSpacing="0.2"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="63dp"
@@ -130,6 +131,7 @@
         <TextView
             android:id="@+id/listDate"
             android:layout_width="119dp"
+            android:letterSpacing="0.2"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="83dp"
@@ -155,6 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="160dp"
             android:layout_marginTop="27dp"
+            android:letterSpacing="0.2"
             android:layout_toEndOf="@+id/picture"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/popular"
