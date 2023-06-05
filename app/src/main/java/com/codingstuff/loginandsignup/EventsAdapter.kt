@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.codingstuff.loginandsignup.databinding.ActivityEventsListItemBinding
 
-class EventsAdapter(context: Context, dataArrayList: ArrayList<EventData>):
-ArrayAdapter<EventData>(context, R.layout.activity_events_list_item, dataArrayList){
+class EventsAdapter(context: Context,private val dataArrayList: ArrayList<EventPageData>):
+    ArrayAdapter<EventPageData>(context, R.layout.activity_events_list_item, dataArrayList){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var view = convertView
@@ -31,5 +31,5 @@ ArrayAdapter<EventData>(context, R.layout.activity_events_list_item, dataArrayLi
             listMark.text = listData.optionalText
         }
         return view
-    }
 }
+    }

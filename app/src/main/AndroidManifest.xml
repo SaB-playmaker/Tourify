@@ -29,6 +29,14 @@
         <activity android:name=".LoyaltyPageActivity"/>
         <activity android:name=".LoyaltyBankActivity" />
         <activity android:name=".CharityActivity" />
+
+        <activity
+            android:name=".EventActivity"
+           android:parentActivityName=".EventsDataMock"
+            android:exported="true">
+        </activity>
+
+
     </application>
 
 </manifest>

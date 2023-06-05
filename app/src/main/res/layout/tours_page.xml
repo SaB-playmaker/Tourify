@@ -38,7 +38,7 @@
             android:layout_marginTop="0dp"
             android:layout_toEndOf="@+id/picture"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/event1"
+            android:text="@string/event"
 
             android:textColor="#000000"
             android:textSize="20sp"
@@ -65,7 +65,7 @@
             android:layout_marginTop="23dp"
             android:layout_toEndOf="@+id/picture"
             android:fontFamily="@font/montserrat"
-            android:text="@string/location1"
+            android:text="@string/location"
             android:textColor="#000000"
             android:textSize="17sp" />
 
@@ -88,7 +88,7 @@
             android:layout_marginStart="123dp"
             android:layout_marginTop="66dp"
             android:layout_toEndOf="@+id/picture"
-            android:text="@string/price1"
+            android:text="@string/price"
             android:textColor="#000000"
             android:fontFamily="@font/montserrat"
             android:textSize="17sp" />
@@ -113,7 +113,7 @@
             android:layout_marginTop="43dp"
             android:layout_toEndOf="@+id/picture"
             android:fontFamily="@font/montserrat"
-            android:text="@string/date1"
+            android:text="@string/date"
             android:textColor="#000000"
             android:textSize="17sp" />
         <com.google.android.material.imageview.ShapeableImageView
@@ -136,7 +136,7 @@
             android:layout_marginStart="23dp"
             android:layout_marginTop="63dp"
             android:layout_toEndOf="@+id/picture"
-            android:text="@string/duration1"
+            android:text="@string/duration"
             android:textColor="#000000"
             android:fontFamily="@font/montserrat"
             android:textSize="17sp" />
@@ -159,7 +159,7 @@
             android:layout_marginStart="22dp"
             android:layout_marginTop="83dp"
             android:layout_toEndOf="@+id/picture"
-            android:text="@string/transport1"
+            android:text="@string/transport"
             android:textColor="#000000"
             android:textSize="17sp"
             android:fontFamily="@font/montserrat"/>
