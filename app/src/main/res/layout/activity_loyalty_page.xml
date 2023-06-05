@@ -55,7 +55,10 @@
             android:layout_height="60dp"
             android:layout_marginLeft="45dp"
             app:srcCompat="@drawable/ic_plus"
-            app:tint="#388084" />
+            app:tint="#388084"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="addOnClickMethod"/>
 
         <TextView
             android:id="@+id/textView3"

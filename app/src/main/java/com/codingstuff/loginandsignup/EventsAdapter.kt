@@ -7,8 +7,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import com.codingstuff.loginandsignup.databinding.ActivityEventsListItemBinding
 
-class EventsAdapter(context: Context, dataArrayList: ArrayList<EventData>):
-ArrayAdapter<EventData>(context, R.layout.activity_events_list_item, dataArrayList){
+class EventsAdapter(context: Context, dataArrayList: ArrayList<Event>):
+ArrayAdapter<Event>(context, R.layout.activity_events_list_item, dataArrayList){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var view = convertView
@@ -22,13 +22,12 @@ ArrayAdapter<EventData>(context, R.layout.activity_events_list_item, dataArrayLi
 
         val binding = view.tag as ActivityEventsListItemBinding
         with(binding) {
-            listData.image?.let { picture.setImageBitmap(it) }
             listName.text = listData.name
             listType.text = listData.type
             listLocation.text = listData.location
             listPrice.text = listData.price
             listDate.text = listData.date
-            listMark.text = listData.optionalText
+            listMark.text = listData.description
         }
         return view
     }

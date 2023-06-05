@@ -15,4 +15,8 @@ class LoyaltyPageActivity : AppCompatActivity() {
         val intent = Intent(this, LoyaltyBankActivity::class.java)
         startActivity(intent)
     }
+    fun addOnClickMethod(view: View) {
+        val intent = Intent(this, AddEventActivity::class.java)
+        startActivity(intent)
+    }
 }

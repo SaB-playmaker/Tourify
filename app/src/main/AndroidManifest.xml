@@ -30,6 +30,7 @@
         <activity android:name=".LoyaltyBankActivity" />
         <activity android:name=".CharityActivity" />
         <activity android:name=".EventActivity" />
+        <activity android:name=".AddEventActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddEventActivity"
+    tools:showIn="@layout/activity_addtask">
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="description"
+            android:hint="Enter event description"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:autofillHints="description"
+            android:hint="Enter event name"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name"
+            android:autofillHints="description"
+            android:hint="Enter event price"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:autofillHints="description"
+            android:hint="Enter event type"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/type"
+            android:autofillHints="description"
+            android:hint="Enter event date"
+            android:inputType="datetime"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:autofillHints="description"
+            android:hint="Enter event location"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="end"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+
+</RelativeLayout>
